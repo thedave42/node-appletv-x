@@ -1,9 +1,11 @@
 {
-  "name": "node-appletv-x",
-  "version": "1.0.19",
+  "name": "@thedave42/node-appletv-x",
+  "version": "1.0.0",
   "description": "A Node.js library for communicating with an Apple TV",
-  "homepage": "https://github.com/stickpin/node-appletv-x",
-  "bugs": "https://github.com/stickpin/node-appletv-x/issues",
+  "homepage": "https://github.com/thedave42/node-appletv-x",
+  "bugs": {
+    "url": "https://github.com/thedave42/node-appletv-x/issues"
+  },
   "keywords": [
     "apple tv",
     "appletv",
@@ -16,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/stickpin/node-appletv-x.git"
+    "url": "git+https://github.com/thedave42/node-appletv-x.git"
   },
   "author": "Evan Coleman <e@edc.me> (https://edc.me)",
   "license": "MIT",
@@ -41,5 +43,8 @@
     "@types/node": "^13.1.6",
     "@types/ora": "^3.2.0",
     "@types/uuid": "^3.4.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
