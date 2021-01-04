@@ -246,7 +246,9 @@ class AppleTV extends typed_events_1.default {
                 return this.sendKeyHoldAndRelease(12, 0x60);
             case AppleTV.Key.Tv:
                 return this.sendKeyPressAndRelease(12, 0x60);
-        }
+            case AppleTV.Key.TopMenu:
+                return this.sendKeyHoldAndRelease(12, 0x86);
+            }
     }
     promiseTimeout(time) {
         return new Promise(function (resolve) {
@@ -358,6 +360,7 @@ exports.AppleTV = AppleTV;
         Key[Key["Select"] = 10] = "Select";
         Key[Key["LongTv"] = 11] = "LongTv";
         Key[Key["Tv"] = 12] = "Tv";
+        Key[Key["TopMenu"] = 13] = "TopMenu";
     })(Key = AppleTV.Key || (AppleTV.Key = {}));
     /** Convert a string representation of a key to the correct enum type.
      * @param string  The string.
@@ -390,6 +393,8 @@ exports.AppleTV = AppleTV;
             return AppleTV.Key.LongTv;
         } else if (string == "tv") {
             return AppleTV.Key.Tv;
+        } else if (string == "topmenu") {
+            return AppleTV.Key.TopMenu;
         }
     }
     AppleTV.key = key;
