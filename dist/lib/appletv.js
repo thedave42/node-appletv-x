@@ -247,7 +247,7 @@ class AppleTV extends typed_events_1.default {
             case AppleTV.Key.Tv:
                 return this.sendKeyPressAndRelease(12, 0x60);
             case AppleTV.Key.TopMenu:
-                return this.sendKeyHoldAndRelease(12, 0x86);
+                return this.sendKeyHoldAndRelease(1, 0x86);
             }
     }
     promiseTimeout(time) {
